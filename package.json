@@ -1,6 +1,6 @@
 {
   "name": "react-comp-generator",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "description": "create react components from your terminal",
   "main": "index.js",
   "scripts": {
@@ -14,5 +14,9 @@
   "dependencies": {
     "commander": "^2.15.1",
     "shelljs": "^0.8.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muresanandrei1/react-comp-generator.git"
   }
 }
