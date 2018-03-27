@@ -38,3 +38,12 @@ class ${name} extends React.Component {
 
 export default ${name};
 ```
+
+#Structure
+
+```
+─ComponentName
+  │ index.js
+  │ style.scss
+  │ style.theme.scss
+```
