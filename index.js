@@ -14,7 +14,8 @@ function capitalize(s) {
 const name = capitalize(program.name);
 
 const funcComponent = `
-import React from 'react';
+import React from "react";
+import "./style.scss";
 
 const ${name} = React.createClass({
   render() {
@@ -28,7 +29,8 @@ export default ${name};
 `;
 
 const classComponent = `
-import React from 'react';
+import React from "react";
+import "./style.scss";
 
 class ${name} extends React.Component {
   constructor(props) {
@@ -48,10 +50,16 @@ shell.exec("mkdir " + name);
 switch (program.type) {
   case "func": 
     shell.exec("echo " + `'${funcComponent}'` + ">> ./" + name + "/index.js");
+    shell.exec("echo >> ./" + name + "/style.scss");
+    shell.exec("echo >> ./" + name + "/style.theme.scss");
     break;
   case "class":
     shell.exec("echo " + `'${classComponent}'` + ">> ./" + name + "/index.js");
+    shell.exec("echo >> ./" + name + "/style.scss");
+    shell.exec("echo >> ./" + name + "/style.theme.scss");
     break;
   default:
-    shell.echo("Not a valid component type")
+    shell.exec("echo " + `'${classComponent}'` + ">> ./" + name + "/index.js");
+    shell.exec("echo >> ./" + name + "/style.scss");
+    shell.exec("echo >> ./" + name + "/style.theme.scss");
 }

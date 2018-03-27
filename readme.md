@@ -5,6 +5,8 @@ run: `rcreate -n <name> -t <type>`
 types: - func
        - class
 
+Not adding -t param will create a Class component
+
 func type: 
 ```
 import React from 'react';
