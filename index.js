@@ -15,7 +15,7 @@ const name = capitalize(program.name);
 
 const funcComponent = `
 import React from "react";
-import "./style.scss";
+import "./style.css";
 
 const ${name} = React.createClass({
   render() {
@@ -30,7 +30,7 @@ export default ${name};
 
 const classComponent = `
 import React from "react";
-import "./style.scss";
+import "./style.css";
 
 class ${name} extends React.Component {
   constructor(props) {
