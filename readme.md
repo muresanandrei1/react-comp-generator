@@ -1,11 +1,16 @@
 install: `npm i -g react-comp-generator`
 
-run: `rcreate -n <name> -t <type>`
+#Commands
+run: `rcreate <name>`
+
+`-t Chose component type`
 
 types: - func
        - class
 
 Not adding -t param will create a Class component
+
+`-c Connects the component to redux`
 
 func type: 
 ```
