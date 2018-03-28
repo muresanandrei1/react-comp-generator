@@ -1,19 +1,30 @@
 install: `npm i -g react-comp-generator`
 
 #Commands
-run: `rcreate <name>`
+Run: 
+```shell
+$ npm i -g react-comp-generator
+```
+
+##Usage
+```shell
+$ rcreate <name>
+```
 
 `-t Chose component type`
 
-types: - func
-       - class
 
-Not adding -t param will create a Class component
+###React-Redux  
+`-c` Connects the component to redux
 
-`-c Connects the component to redux`
+###Types: 
+  * func
+  * class
 
-func type: 
-```
+Not adding `-t` param will create a Class component.
+
+Func type: 
+```js
 import React from 'react';
 
 const ${name} = React.createClass({
@@ -26,8 +37,9 @@ const ${name} = React.createClass({
 
 export default ${name};
 ```
-class type
-```
+
+Class type
+```js
 import React from 'react';
 
 class ${name} extends React.Component {

@@ -1,6 +1,6 @@
 {
   "name": "react-comp-generator",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "create react components from your terminal",
   "keywords": ["react", "components", "component", "generator", "class", "functional", "style", "react-component-generator"],
   "main": "index.js",
